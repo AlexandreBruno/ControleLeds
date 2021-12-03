@@ -43,7 +43,7 @@
 							  b:cor.rgb.b,
 							  q:parseInt(qtdLeds)};
                //document.getElementById('title').style.color = color.hexString;
-               var url = "http://" + ipAddress + "/colordata";
+               var url = "https://" + ipAddress + "/colordata";
 			   var jsonString = JSON.stringify(corEQtd);
                xhttp.open("POST", url);
                xhttp.send(jsonString);
